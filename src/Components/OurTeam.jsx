@@ -2,6 +2,8 @@ import React from "react";
 // import harshal from "../img/harshal.jpg";
 import sagar from "../img/sagar.jpeg";
 import vinod from "../img/vinod.png";
+import alka from "../img/alka.jpeg";
+import tushar from "../img/tushar.jpg";
 const OurTeam = () => {
 return (
 <>
@@ -37,6 +39,26 @@ return (
                         <h4>Vinod Keshariya</h4>
                         <p>Frontend UI Developer</p>
                         <a href="https://www.linkedin.com/in/ahir-vinod-keshariya-a747562b2/" target="_blank" rel="noreferrer">
+                            <i className="ri-linkedin-box-fill icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div className="image4">
+                    <img src={alka} alt="alka" loading="lazy"/>
+                    <div className="caption">
+                        <h4>Alka Singh</h4>
+                        <p>ReactJs Developer</p>
+                        <a href="https://www.linkedin.com/in/alka-kumari-b357261b6/" target="_blank" rel="noreferrer">
+                            <i className="ri-linkedin-box-fill icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div className="image5">
+                    <img src={tushar} alt="tushar" loading="lazy"/>
+                    <div className="caption">
+                        <h4>Tushar Dontulwar</h4>
+                        <p>Web Development Intern</p>
+                        <a href="https://www.linkedin.com/in/tushar-dontulwar-53969127a/" target="_blank" rel="noreferrer">
                             <i className="ri-linkedin-box-fill icon"></i>
                         </a>
                     </div>
