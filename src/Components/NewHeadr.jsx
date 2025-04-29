@@ -29,14 +29,19 @@ function NewHeader() {
         setTimeout(() => {
           navigate(`/#${link.replace("#", "")}`, { replace: true });
         }, 100);
-      } else if (currentUrl === "/blogs" || currentUrl === "/blogs/") {
+        scrollToElement(link.replace("#", ""));
+      } else if (currentUrl !== "/" || currentUrl !== "/blogs/") {
         setTimeout(() => {
+          navigate("/", { replace: true });
           navigate(`/#${link.replace("#", "")}`, { replace: true });
         }, 100);
+        setTimeout(() => {
+          scrollToElement(link.replace("#", ""));
+        }, 500);
       } else {
         navigate(`/#${link.replace("#", "")}`);
+        scrollToElement(link.replace("#", ""));
       }
-      scrollToElement(link.replace("#", ""));
     } else {
       navigate(`/${link}`);
     }
